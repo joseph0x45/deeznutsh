@@ -11,10 +11,24 @@ function youtube(){
     if [ -z "$1" ]; then
         echo "Please provide a search query";
     elif [ "$OS" == "Linux" ]; then
-        xdg-open "$1";
+        xdg-open "https://youtube.com/results?search_query=$1";
     elif [ "$OS" == "Darwin" ]; then
-        open "$1";
+        open "https://youtube.com/results?search_query=$1";
     else
-        start "$1"
+        start "https://youtube.com/results?search_query=$1"
+    fi
+}
+
+
+
+function google(){
+    if [ -z "$1" ]; then
+        echo "Please provide a search query";
+    elif [ "$OS" == "Linux" ]; then
+        xdg-open "https://www.google.com/search?q=$1";
+    elif [ "$OS" == "Darwin" ]; then
+        open "https://www.google.com/search?q=$1";
+    else
+        start "https://www.google.com/search?q=$1"
     fi
 }
