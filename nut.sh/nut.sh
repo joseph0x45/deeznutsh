@@ -1,6 +1,4 @@
 #!/bin/bash
-# Deeznuts v0.0.1
-# Author TheWisePigeon on GitHub
 source ./nut_manager.sh
 
 OS=$(uname)
