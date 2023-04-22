@@ -15,5 +15,7 @@ function youtube(){
         xdg-open "$1";
     elif [ "$OS" == "Darwin" ]; then
         open "$1";
+    else
+        start "$1"
     fi
 }
