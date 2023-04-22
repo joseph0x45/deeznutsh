@@ -1,5 +1,5 @@
 #!/bin/bash
-source ./nut_manager.sh
+source "$HOME/nutsh/nut_manager.sh"
 
 OS=$(uname)
 
