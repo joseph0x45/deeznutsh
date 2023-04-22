@@ -5,5 +5,14 @@
 
 function nutsh (){
     COMMAND=$1
-    echo "$COMMAND"
+    OS=$(uname)
+
+    case "$1" in
+        "version") echo "nutsh v-0.0.1"
+        ;;
+        "--version") echo "nutsh v-0.0.1"
+        ;;
+        *) echo "Help"
+        ;;
+    esac
 }
