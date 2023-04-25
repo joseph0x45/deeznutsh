@@ -20,7 +20,8 @@ function nut (){
         ;;
         "self")
             case "$ARGUMENT" in
-                "update") echo 1
+                "update") 
+                    echo "You want to update this bitch dontcha"
                 ;;
                 *) echo "Unsupported argument"
                 ;;
