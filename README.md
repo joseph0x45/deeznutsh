@@ -1,2 +1,2 @@
-# goodiesh
-A collection of bash scripts to automate things and speed up development process
+# DeezNutsh
+A collection of bash goodies to make developers life easier
