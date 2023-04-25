@@ -24,6 +24,7 @@ function nut (){
                 *) echo "Unsupported argument"
                 ;;
             esac
+        ;;
         *) echo "Help"
         ;;
     esac
