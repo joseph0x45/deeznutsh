@@ -20,8 +20,6 @@ function youtube(){
     fi
 }
 
-
-
 function google(){
     if [ -z "$1" ]; then
         echo "Please provide a search query";
@@ -32,4 +30,53 @@ function google(){
     else
         start "https://www.google.com/search?q=$1"
     fi
+}
+
+dn_post() {
+    if [ -z "$1" ]; then
+        echo "Usage: dn_post <url> [content_type] [request_body]"
+        return 1
+    fi
+    content_type="${2:-application/json}"
+    request_body="${3:-{}}"
+    curl --request POST --header "Content-Type: $content_type" --data "$request_body" "$1"
+}
+
+dn_put() {
+    if [ -z "$1" ]; then
+        echo "Usage: dn_put <url> [content_type] [request_body]"
+        return 1
+    fi
+    content_type="${2:-application/json}"
+    request_body="${3:-{}}"
+    curl --request PUT --header "Content-Type: $content_type" --data "$request_body" "$1"
+}
+
+dn_del() {
+    if [ -z "$1" ]; then
+        echo "Usage: dn_del <url> [content_type] [request_body]"
+        return 1
+    fi
+    content_type="${2:-application/json}"
+    request_body="${3:-{}}"
+    curl --request DELETE --header "Content-Type: $content_type" --data "$request_body" "$1"
+}
+
+dn_patch() {
+    if [ -z "$1" ]; then
+        echo "Usage: dn_patch <url> [content_type] [request_body]"
+        return 1
+    fi
+    content_type="${2:-application/json}"
+    request_body="${3:-{}}"
+    curl --request PATCH --header "Content-Type: $content_type" --data "$request_body" "$1"
+}
+
+dn_get(){
+    if [ -z "$1" ]; then
+        echo "Usage: post <url> [content_type] [request_body]"
+        return 1
+    fi
+    curl "$1"
+
 }
