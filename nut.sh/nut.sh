@@ -74,7 +74,7 @@ dn_patch() {
 
 dn_get(){
     if [ -z "$1" ]; then
-        echo "Usage: post <url> [content_type] [request_body]"
+        echo "Usage: dn_get <url>"
         return 1
     fi
     curl "$1"
