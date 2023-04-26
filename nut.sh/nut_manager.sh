@@ -4,7 +4,7 @@
 VERSION="0.1"
 
 HELP_STRING="
-Welcome to deez Nut.sh
+DeezNutsh
 A collection of bash goodies designed to make your life easier
 Contribute to deeznutsh on github https://github.com/TheWisePigeon/deeznutsh
 "
