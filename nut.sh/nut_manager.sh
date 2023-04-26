@@ -23,6 +23,10 @@ function nut (){
                 "update") 
                     curl -L cdn.reexlabs.com/update | bash
                 ;;
+                "remove")
+                    echo -e "Removing deeznutsh from your computer, Thanks for trying it out!"
+                    rm -rf "$(dirname "${BASH_SOURCE[0]}")"
+                ;;
                 *) echo "Unsupported argument"
                 ;;
             esac
