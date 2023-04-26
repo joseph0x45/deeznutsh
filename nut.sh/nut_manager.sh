@@ -1,7 +1,7 @@
 #!/bin/bash
 # This is the nutsh manager
 # Responsible of updating/ downloading addons...
-VERSION="0.2"
+VERSION="0.1"
 
 HELP_STRING="
 Welcome to deez Nut.sh
