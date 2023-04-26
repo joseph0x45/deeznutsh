@@ -25,6 +25,7 @@ function nut (){
                 ;;
                 "remove")
                     echo -e "Removing deeznutsh from your computer, Thanks for trying it out!"
+                    echo "Make sure to remove the line where you source nutsh after this operation is complete"
                     rm -rf "$(dirname "${BASH_SOURCE[0]}")"
                 ;;
                 *) echo "Unsupported argument"
