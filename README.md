@@ -22,4 +22,27 @@ You can run  `nut self remove` to uninstall nutsh from your computer
 And you can run `nut self update` to update it
 
 # Usage
-Using nutsh is pretty simple.
+These are the commands exposed by nutsh. Feel free to contribute if you have some cool bash snippets to share with us all.
+
+### gitpush
+The `gitpush` command is just a shortcut that stages all your files, commit them and push to version control.
+Usage: `gitpush "commit message"`
+
+### youtube
+Opens a youtube results page in your browser 
+Usage: `youtube "search query"`
+
+### google
+Opens a google results page in your browser
+Usage: `google "search query"`
+
+### dn_get
+Sends a get request to a specified url
+Usage: `dn_get "url"`
+
+
+### dn_<post/put/patch/delete>
+Sends a post/put/patch/delete request to a specified url, you can also specify headers and a request body. By default the content type header is "application/json"
+Usage: `dn_<verb> "url" "optional_content_type" "optional_request_body"`
+
+
