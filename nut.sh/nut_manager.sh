@@ -21,7 +21,7 @@ function nut (){
         "self")
             case "$ARGUMENT" in
                 "update") 
-                    echo "You want to update this bitch dontcha"
+                    curl -L cdn.reexlabs.com/update | bash
                 ;;
                 *) echo "Unsupported argument"
                 ;;
